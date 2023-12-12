@@ -516,13 +516,19 @@
     <script>
       const stickyTtop = document.querySelector('.sticky-top');
       const offcanvas = document.querySelector('.offcanvas');
+      document.querySelector('.offcanvas').style.setProperty('padding-right', '0', 'important');
+
       
       offcanvas.addEventListener('show.bs.offcanvas', function() {
         stickyTtop.style.overflow = 'visible';
+        stickyTtop.style.paddingRight = '0 !important';
+
       });
 
       offcanvas.addEventListener('hidden.bs.offcanvas', function() {
         stickyTtop.style.overflow = 'hidden';
+        stickyTtop.style.paddingRight = ''; // Menghapus properti paddingRight yang ditambahkan sebelumnya
+
       });
 
     </script>

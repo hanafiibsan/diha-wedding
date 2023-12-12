@@ -19,6 +19,8 @@ body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
   min-height: 4000px;
+  padding-right: 0.1rem !important;
+
 }
 
 .hero::before{
@@ -75,6 +77,10 @@ body {
 
 .mynavbar .offcanvas {
   height   : 100vh;
+  margin-right: 2rem;
+  /* margin-left: 5rem; */
+  /* clip-path: polygon(0 0, 100% 0, 50% 50%, 0 50%); */
+
 }
 
 .mynavbar .navbar-brand, 
@@ -90,6 +96,8 @@ body {
 
 .sticky-top {
   overflow: hidden;
+  padding-right: 0 !important;
+
 }
 
 .home {
@@ -467,11 +475,13 @@ footer li {
   .simply-countdown > .simply-section {
     padding: 60px;
     margin: 5px;
+    
   }
 
   .mynavbar .nav-link {
     font-size: 2rem;
     text-align: center;
+    
   }
 
   .timeline li .timeline-image {
@@ -489,6 +499,10 @@ footer li {
   .simply-countdown > .simply-section {
     padding: 25px;
     margin: 3px;
+  }
+
+  .mynavbar .offcanvas {
+    width: 150px;
   }
 
   .timeline li .timeline-image {
