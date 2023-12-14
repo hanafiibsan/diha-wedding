@@ -45,12 +45,12 @@
       id="hero"
       class="hero w-100 h-100 p-3 mx-auto text-center 
       d-flex justify-content-center align-items-center 
-      text-white" data-aos="fade-up" data-aos-anchor-placement="top-center">
-      <main data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      text-white">
+      <main>
         <h4>Kepada <span>,</span></h4>
         <h1>Dinda & Hanafi</h1>
         <p>Akan melangsungkan resepsi pernikahan pada:</p>
-        <div class="simply-countdown" data-aos="fade-up" data-aos-duration="1000"></div>
+        <div class="simply-countdown"></div>
         <a href="#home" class="btn btn-lgn mt-4" onclick="enableScroll()">Lihat Undangan</a>
       </main>
     </section>
@@ -99,8 +99,8 @@
       </div>
     </nav>
 
-    <section id="home" class="home" data-aos="fade-up">
-      <div class="container" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" >
+    <section id="home" class="home">
+      <div class="container" >
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
             <h2>Acara Pernikahan</h2>
@@ -140,12 +140,13 @@
                 />
               </div>
             </div>
+            <br/>
           </div>
 
           <span class="heart">
             <i class="bi bi-heart-fill"></i>
           </span>
-
+          
           <div class="col-lg-6">
             <div class="row">
               <div class="col-4">
@@ -260,7 +261,7 @@
         <div class="row">
           <div class="col">
             <ul class="timeline">
-               <li data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+               <li>
                   <div class="timeline-image" style="background-image: url(img/rumah.jpg);"></div>
                   <div class="timeline-panel">
                     <div class="timeline-heading">
@@ -274,7 +275,7 @@
                     </div>
                   </div>
                </li>
-               <li class="timeline-inverted" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+               <li class="timeline-inverted">
                   <div class="timeline-image" style="background-image:
                   url(https://picsum.photos/300/300);"></div>
                   <div class="timeline-panel">
@@ -288,7 +289,7 @@
                     </div>
                   </div>
                </li>
-               <li data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+               <li>
                   <div class="timeline-image" style="background-image:
                   url(https://picsum.photos/301/301);"></div>
                   <div class="timeline-panel">
@@ -302,7 +303,7 @@
                     </div>
                   </div>
                </li>
-               <li class="timeline-inverted" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+               <li class="timeline-inverted" >
                   <div class="timeline-image" style="background-image:
                   url(https://picsum.photos/302/302);"></div>
                   <div class="timeline-panel">
@@ -630,24 +631,51 @@
     </script>
 
     <script>
-      window.addEventListener("load", function() {
+      window.addEventListener("load", function () {
         const form = document.getElementById('my-form');
-        form.addEventListener("submit", function(e) {
+        form.addEventListener("submit", function (e) {
           e.preventDefault();
+
+          // Pemeriksaan apakah opsi yang dipilih adalah "Pilih salah satu"
+          const selectedStatus = document.getElementById('status').value;
+          if (selectedStatus === 'selected') {
+            Swal.fire({
+              title: 'Peringatan!',
+              text: 'Silakan pilih salah satu opsi.',
+              icon: 'warning',
+              confirmButtonText: 'OK'
+            });
+            return; // Jangan melanjutkan pengiriman formulir jika opsi tidak valid
+          }
+
+          // Pemeriksaan apakah nama dan jumlah diisi
+          const nama = document.getElementById('nama').value;
+          const jumlah = document.getElementById('jumlah').value;
+
+          if (!nama || jumlah <= 0) {
+            Swal.fire({
+              title: 'Peringatan!',
+              text: 'Harap isi semua kolom dengan benar.',
+              icon: 'warning',
+              confirmButtonText: 'OK'
+            });
+            return; // Jangan melanjutkan pengiriman formulir jika data tidak lengkap atau jumlah tidak valid
+          }
+
           const data = new FormData(form);
           const action = e.target.action;
           fetch(action, {
-            method: 'POST',
-            body: data,
-          })
-          .then(() => {
-            Swal.fire({
-              title: 'Konfirmasi Kehadiran Berhasil!',
-              text: 'Terima kasih atas konfirmasinya.',
-              icon: 'success',
-              confirmButtonText: 'OK'
-             });
-            // Tambahkan kode tambahan jika diperlukan setelah konfirmasi
+              method: 'POST',
+              body: data,
+            })
+            .then(() => {
+              Swal.fire({
+                title: 'Konfirmasi Kehadiran Berhasil!',
+                text: 'Terima kasih atas konfirmasinya.',
+                icon: 'success',
+                confirmButtonText: 'OK'
+              });
+              // Tambahkan kode tambahan jika diperlukan setelah konfirmasi
             })
             .catch(error => {
               console.error('Error:', error);
@@ -658,10 +686,11 @@
                 confirmButtonText: 'OK'
               });
             });
-          });
         });
-
+      });
     </script>
+
+
 
 
     <script>
