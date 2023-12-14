@@ -2,6 +2,8 @@
   --pink: #f14e95;
   --bg: #0a0a0a;
   --shadow: 0 2px 2px rgba(0 0 0 / 0.5);
+  --blue: #02aef8;
+
 }
 
 /* .fade-in {
@@ -60,13 +62,13 @@ body {
 }
 
 .hero a {
-  color: var(--pink);
+  color: var(--blue);
   background-color: white;
   box-shadow: var(--shadow);
 }
 
 .hero a:hover {
-  background-color: var(--pink);
+  background-color: var(--blue);
   color: white;
 }
 
@@ -105,8 +107,8 @@ body {
   background-size: cover;
   min-height: 100vh;
   margin-top: -6rem;
-  padding-top: 15rem; 
-  padding-bottom: 6rem;
+  padding-top: 10rem; 
+  padding-bottom: 10rem;
 }
 
 .home h2,
@@ -115,7 +117,7 @@ body {
 .gallery h2,
 .rsvp h2,
 .gifts h2{
-  color: var(--pink);
+  color: var(--blue);
   font-family: 'Sacramento';
   font-size: 5rem;
   font-weight: bold; 
@@ -125,6 +127,7 @@ body {
   color: #444;
   font-size:  1.5rem;
   margin-bottom: 1rem; 
+  font-weight: bold;
 }
 
 .home p {
@@ -140,7 +143,7 @@ body {
 .home .couple h3 {
   font-family: 'Sacramento';
   font-size: 2.4rem;
-  color: var(--pink); 
+  color: var(--blue); 
 }
 
 .home .couple img {
@@ -349,20 +352,20 @@ body {
 }
 
 .rsvp button {
-  background-color: var(--pink);
+  background-color: var(--blue);
   color: white;
-  border: 1px solid var(--pink);
+  border: 1px solid var(--blue);
 }
 
 .rsvp button:hover {
   background-color: white;
-  color: var(--pink);
+  color: var(--blue);
   border: 1px solid white;
 }
 
 footer {
   padding: 3rem;
-  background-color: var(--pink);
+  background-color: var(--blue);
   color: white;
 }
 
@@ -411,6 +414,11 @@ footer li {
   }
 }
 
+/* Swal.fire({
+  title: "Good job!",
+  text: "You clicked the button!",
+  icon: "success"
+}); */
 
 
 /* Media Query */

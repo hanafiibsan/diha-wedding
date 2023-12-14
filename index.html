@@ -31,19 +31,26 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
     />
 
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
     <section
       id="hero"
-      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
-    >
-      <main>
+      class="hero w-100 h-100 p-3 mx-auto text-center 
+      d-flex justify-content-center align-items-center 
+      text-white" data-aos="fade-up" data-aos-anchor-placement="top-center">
+      <main data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <h4>Kepada <span>,</span></h4>
         <h1>Dinda & Hanafi</h1>
         <p>Akan melangsungkan resepsi pernikahan pada:</p>
-        <div class="simply-countdown"></div>
+        <div class="simply-countdown" data-aos="fade-up" data-aos-duration="1000"></div>
         <a href="#home" class="btn btn-lgn mt-4" onclick="enableScroll()">Lihat Undangan</a>
       </main>
     </section>
@@ -92,8 +99,8 @@
       </div>
     </nav>
 
-    <section id="home" class="home">
-      <div class="container">
+    <section id="home" class="home" data-aos="fade-up">
+      <div class="container" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="1000" >
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
             <h2>Acara Pernikahan</h2>
@@ -110,24 +117,25 @@
         </div>
 
         <div class="row couple">
+          
           <div class="col-lg-6">
             <div class="row">
               <div class="col-8 text-end">
-                <h3>Muhammad Hanafi Ibsan</h3>
-                <p>
+                <h3>Dinda Rivani, S.Pd</h3>
+                <!-- <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
                   non obcaecati numquam minima rem eveniet.
-                </p>
+                </p> -->
                 <p>
-                  Putra dari Bpk. Lorem <br />
+                  Putri dari Bpk. Lorem <br />
                   dan <br />
                   Ibu Ipsum
                 </p>
               </div>
               <div class="col-4">
                 <img
-                  src="img/boy.jpg"
-                  alt="Muhammad Hanafi Ibsan"
+                  src="img/dinda.jpeg"
+                  alt="Dinda Rivani"
                   class="img-responsive rounded-circle"
                 />
               </div>
@@ -142,21 +150,21 @@
             <div class="row">
               <div class="col-4">
                 <img
-                  src="img/girl.jpg"
-                  alt="Dinda Rivani"
+                  src="img/hanafi.jpeg"
+                  alt="Muhammad Hanafi Ibsan"
                   class="img-responsive rounded-circle"
                 />
               </div>
               <div class="col-8">
-                <h3>Dinda Rivani</h3>
-                <p>
+                <h3>Muhammad Hanafi Ibsan, S.Kom</h3>
+                <!-- <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
                   non obcaecati numquam minima rem eveniet.
-                </p>
+                </p> -->
                 <p>
-                  Putri dari Bpk. Ipsum <br />
+                  Putra dari Bpk. Abu Hasan Asy'ari<br />
                   dan <br />
-                  Ibu Lorem
+                  Ibu Samini
                 </p>
               </div>
             </div>
@@ -252,61 +260,61 @@
         <div class="row">
           <div class="col">
             <ul class="timeline">
-               <li>
-                <div class="timeline-image" style="background-image: url(img/rumah.jpg);"></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h3>Pertama Bertemu</h3>
-                    <span>1 Januari 2021</span> 
+               <li data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                  <div class="timeline-image" style="background-image: url(img/rumah.jpg);"></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3>Pertama Bertemu</h3>
+                      <span>1 Januari 2021</span> 
+                    </div>
+                    <div class="timeline-body">
+                      <p>Lorem ipsum dolor sit, amet 
+                        consectetur adipisicing elit. Similique autem consequuntur inventore vero, 
+                        ex nisi.</p>
+                    </div>
                   </div>
-                  <div class="timeline-body">
-                    <p>Lorem ipsum dolor sit, amet 
-                      consectetur adipisicing elit. Similique autem consequuntur inventore vero, 
-                      ex nisi.</p>
-                  </div>
-                </div>
                </li>
-               <li class="timeline-inverted">
-                <div class="timeline-image" style="background-image:
-                 url(https://picsum.photos/300/300);"></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h3>Mulai Serius</h3>
-                    <span>19 Juni 2022</span> 
+               <li class="timeline-inverted" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                  <div class="timeline-image" style="background-image:
+                  url(https://picsum.photos/300/300);"></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3>Tunangan</h3>
+                      <span>9 Agustus 2023</span> 
+                    </div>
+                    <div class="timeline-body">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil architecto quibusdam
+                        accusantium tempora voluptas aut hic similique facere ex at!</p>
+                    </div>
                   </div>
-                  <div class="timeline-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil architecto quibusdam
-                       accusantium tempora voluptas aut hic similique facere ex at!</p>
-                  </div>
-                </div>
                </li>
-               <li>
-                <div class="timeline-image" style="background-image:
-                 url(https://picsum.photos/301/301);"></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h3>Tunangan</h3>
-                    <span>9 Agustus 2023</span> 
+               <li data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                  <div class="timeline-image" style="background-image:
+                  url(https://picsum.photos/301/301);"></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3>Lamaran</h3>
+                      <span>1 Oktober 2023</span> 
+                    </div>
+                    <div class="timeline-body">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, fuga nobis
+                        ex doloribus praesentium quae consequuntur incidunt odio.</p>
+                    </div>
                   </div>
-                  <div class="timeline-body">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, fuga nobis
-                       ex doloribus praesentium quae consequuntur incidunt odio.</p>
-                  </div>
-                </div>
                </li>
-               <li class="timeline-inverted">
-                <div class="timeline-image" style="background-image:
-                 url(https://picsum.photos/302/302);"></div>
-                <div class="timeline-panel">
-                  <div class="timeline-heading">
-                    <h3>Lamaran</h3>
-                    <span>1 Oktober 2023</span> 
+               <li class="timeline-inverted" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                  <div class="timeline-image" style="background-image:
+                  url(https://picsum.photos/302/302);"></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <h3>Menikah</h3>
+                      <span>22 Desember 2023</span> 
+                    </div>
+                    <div class="timeline-body">
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nostrum explicabo dolorem totam 
+                        debitis velit consectetur voluptate modi deleniti et? Facere hic veniam deleniti error, velit quibusdam unde dolore iste!</p>
+                    </div>
                   </div>
-                  <div class="timeline-body">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nostrum explicabo dolorem totam 
-                      debitis velit consectetur voluptate modi deleniti et? Facere hic veniam deleniti error, velit quibusdam unde dolore iste!</p>
-                  </div>
-                </div>
                </li>
             </ul>
           </div>
@@ -633,10 +641,25 @@
             body: data,
           })
           .then(() => {
-            alert("Konfirmasi kehadiran berhasil terkirim!");
-          })
+            Swal.fire({
+              title: 'Konfirmasi Kehadiran Berhasil!',
+              text: 'Terima kasih atas konfirmasinya.',
+              icon: 'success',
+              confirmButtonText: 'OK'
+             });
+            // Tambahkan kode tambahan jika diperlukan setelah konfirmasi
+            })
+            .catch(error => {
+              console.error('Error:', error);
+              Swal.fire({
+                title: 'Error!',
+                text: 'Terjadi kesalahan. Silakan coba lagi.',
+                icon: 'error',
+                confirmButtonText: 'OK'
+              });
+            });
+          });
         });
-      });
 
     </script>
 
@@ -651,6 +674,15 @@
 
       document.querySelector('#nama').value = to;
     </script>
+
+
+    <!-- Tambahkan di bagian head atau sebelum tag body ditutup -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <script>
+    AOS.init();
+  </script>
+  
 
   </body>
 
