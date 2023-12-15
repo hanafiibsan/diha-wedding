@@ -240,7 +240,7 @@ body {
 .gallery,
 .gifts {
   padding-top: 10rem;
-  padding-bottom: 8rem;
+  padding-bottom: 5rem;
   background-image: url(img/kedua.png );
   background-size: cover;
 } 
@@ -388,16 +388,16 @@ body {
 }
 
 .rsvp p {
-  color: white;
+  color: black;
 }
 
 .rsvp form label {
-  color: white;
+  color: black;
 }
 
 .rsvp button {
   background-color: var(--blue);
-  color: white;
+  color: var(--blue)
   border: 1px solid var(--blue);
 }
 
@@ -439,7 +439,7 @@ footer li {
   bottom: 2.5rem;
   right: 2rem;
   cursor: pointer;
-  color: white;
+  color: chartreuse;
   opacity: 0.5;
   mix-blend-mode: difference;
   animation: rotating 4s linear infinite;
