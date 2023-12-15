@@ -66,8 +66,8 @@ body {
 .hero p {
   font-size: 1.4rem;
   /* font-weight: bold;  */
-  text-shadow: var(--shdwht);
-  color: #242a2c;
+  text-shadow: var(--shadow);
+  color: white;
 }
 
 .hero a {
@@ -397,8 +397,8 @@ body {
 }
 
 .rsvp button {
-  background-color: white;
-  color: var(--blue);
+  background-color: var(--blue);
+  color: white;
   border: 1px solid var(--blue);
 }
 
