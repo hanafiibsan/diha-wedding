@@ -22,7 +22,7 @@
     <link
       rel="stylesheet"
       href="countdown/simplyCountdown.theme.default.css "
-    />
+    /> 
     <script src="countdown/simplyCountdown.min.js"></script>
 
     <!-- Bootstrap Icons -->
@@ -36,6 +36,13 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
+    <!-- Animate Style -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -47,11 +54,12 @@
       d-flex justify-content-center align-items-center 
       text-white">
       <main>
-        <h4>Kepada <span>,</span></h4>
-        <h1>Dinda & Hanafi</h1>
-        <p>Akan melangsungkan resepsi pernikahan pada:</p>
-        <div class="simply-countdown"></div>
-        <a href="#home" class="btn btn-lgn mt-4" onclick="enableScroll()">Lihat Undangan</a>
+        <h4 data-aos="zoom-in-up">Kepada <span>,</span></h4>
+        <h1 data-aos="zoom-in-up">Dinda & Hanafi</h1>
+        <p data-aos="zoom-in-up">Akan melangsungkan resepsi pernikahan pada:</p>
+        <div class="simply-countdown" data-aos="fade-up" data-aos-duration="800"></div>
+        <a href="#home" class="btn btn-lgn mt-4 " data-aos="fade-up" data-aos-duration="2000" onclick="enableScroll()">Lihat Undangan</a>
+        
       </main>
     </section>
 
@@ -100,15 +108,15 @@
     </nav>
 
     <section id="home" class="home">
-      <div class="container" >
+      <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 text-center">
-            <h2>Acara Pernikahan</h2>
-            <h3>
+            <h2 data-aos="zoom-in-up">Acara Resepsi Pernikahan</h2>
+            <h3 data-aos="zoom-in-up">
               Diselenggarakan pada 24 Desember 2023 di Desa Saentis, Percut Sei Tuan, Sumatera
               Utara.
             </h3>
-            <p>
+            <p data-aos="zoom-in-up">
               Oleh karena itu, dengan segala hormat, kami bermaksud untuk
               mengundang Bapak/Ibu, Saudara/i, untuk hadir pada acara pernikahan
               kami.
@@ -121,15 +129,15 @@
           <div class="col-lg-6">
             <div class="row">
               <div class="col-8 text-end">
-                <h3>Dinda Rivani, S.Pd</h3>
+                <h3 data-aos="zoom-in-up">Dinda Rivani, S.Pd</h3>
                 <!-- <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
                   non obcaecati numquam minima rem eveniet.
                 </p> -->
-                <p>
-                  Putri dari Bpk. Lorem <br />
+                <p data-aos="zoom-in-up">
+                  Putri dari Bpk. Sudarto <br />
                   dan <br />
-                  Ibu Ipsum
+                  Ibu Surmiati
                 </p>
               </div>
               <div class="col-4">
@@ -137,13 +145,14 @@
                   src="img/dinda.jpeg"
                   alt="Dinda Rivani"
                   class="img-responsive rounded-circle"
+                  data-aos="zoom-in-up"
                 />
               </div>
             </div>
             <br/>
           </div>
 
-          <span class="heart">
+          <span class="heart" data-aos="zoom-in-up">
             <i class="bi bi-heart-fill"></i>
           </span>
           
@@ -154,15 +163,16 @@
                   src="img/hanafi.jpeg"
                   alt="Muhammad Hanafi Ibsan"
                   class="img-responsive rounded-circle"
+                  data-aos="zoom-in-up"
                 />
               </div>
               <div class="col-8">
-                <h3>Muhammad Hanafi Ibsan, S.Kom</h3>
+                <h3 data-aos="zoom-in-up">Muhammad Hanafi Ibsan, S.Kom</h3>
                 <!-- <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
                   non obcaecati numquam minima rem eveniet.
                 </p> -->
-                <p>
+                <p data-aos="zoom-in-up">
                   Putra dari Bpk. Abu Hasan Asy'ari<br />
                   dan <br />
                   Ibu Samini
@@ -178,20 +188,20 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <h2>Informasi Acara</h2>
-            <p class="alamat">
+            <h2 data-aos="zoom-in-up">Informasi Acara</h2>
+            <p class="alamat" data-aos="zoom-in-up">
               Alamat: Lorong Suka Mulia, No. 64 Desa Saentis, Kec. Percut Sei Tuan,
               Kabupaten Deli Serdang, Sumatera Utara 20371</p>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3981.
+              <iframe data-aos="zoom-in-up" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3981.
               678572388313!2d98.74366669999999!3d3.6604999999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
               1!3m2!1m1!2zM8KwMzknMzcuOCJOIDk4wrA0NCczNy4yIkU!5e0!3m2!1sid!2sid!4v1702401278738!5m2!1sid!2sid" 
               width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             <a href="https://maps.app.goo.gl/zpBeSKqm6dQxJCms6" target="_blank" 
-            class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
-            <p class="description">Diharapkan untuk tidak salah alamat dan tanggal.
+            class="btn btn-light btn-sm my-3" data-aos="zoom-in-up" data-aos="zoom-in-up">Klik untuk membuka peta</a>
+            <p class="description" data-aos="zoom-in-up">Diharapkan untuk tidak salah alamat dan tanggal.
               Manakala tiba di tujuan namun tidak ada tanda-tanda sedang dilangsungkan pernikahan,
               boleh jadi Anda salah jadwal, atau salah tempat.
             </p>
@@ -200,8 +210,8 @@
 
         <div class="row justify-content-center mt-4">
           <div class="col-md-5 col-10">
-            <div class="card text-center text-bg-light mb-5">
-              <div class="card-header">Akad Nikah</div>
+            <div class="card text-center text-bg-light mb-5" data-aos="zoom-in-up">
+              <div class="card-header" >Akad Nikah</div>
               <div class="card-body">
                 <div class="row justify-content-center">
                   <div class="col-md-6">
@@ -221,7 +231,7 @@
             </div>
           </div>
           <div class="col-md-5 col-10">
-            <div class="card text-center text-bg-light">
+            <div class="card text-center text-bg-light" data-aos="zoom-in-up">
               <div class="card-header">Resepsi</div>
               <div class="card-body">
                 <div class="row justify-content-center">
@@ -249,71 +259,74 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-md-8 col-10 text-center">
-            <span>Bagaimana Cinta Kami Bersemi</span>
-            <h2>Cerita Kami</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-              non obcaecati numquam minima rem eveniet.
+            <span data-aos="zoom-in-up">Bagaimana Cinta Kami Bersemi</span>
+            <h2 data-aos="zoom-in-up">Cerita Kami</h2>
+            <p data-aos="zoom-in-up">
+              Kami saling menyadari keberadaan satu sama lain, dan cinta tumbuh di antara kami.
+              Pertemuan pertama kami terjadi pada 26 Desember 2021,
+               membuka lembaran baru dalam kisah kami.
             </p>
           </div>
         </div>
 
-        <div class="row">
+        <div class="row" data-aos="zoom-in-up">
           <div class="col">
             <ul class="timeline">
-               <li>
-                  <div class="timeline-image" style="background-image: url(img/rumah.jpg);"></div>
+               <li data-aos="zoom-in-left">
+                  <div class="timeline-image" style="background-image: url(img/gallery/1.jpeg);"></div>
                   <div class="timeline-panel">
                     <div class="timeline-heading">
-                      <h3>Pertama Bertemu</h3>
+                      <h3 >Pertama Bertemu</h3>
                       <span>1 Januari 2021</span> 
                     </div>
                     <div class="timeline-body">
-                      <p>Lorem ipsum dolor sit, amet 
-                        consectetur adipisicing elit. Similique autem consequuntur inventore vero, 
-                        ex nisi.</p>
+                      <p>
+                        Mata kita bertemu pada 26 Desember 2021, membawa keajaiban ke dalam hidup kita. 
+                        Suasana khusus saat itu menjadi saksi awal dari kisah cinta yang berkembang.
+                      </p>
                     </div>
                   </div>
                </li>
-               <li class="timeline-inverted">
-                  <div class="timeline-image" style="background-image:
-                  url(https://picsum.photos/300/300);"></div>
+               <li class="timeline-inverted" data-aos="zoom-in-right">
+                  <div class="timeline-image" style="background-image: url(img/gallery/2.jpeg);"></div>
                   <div class="timeline-panel">
                     <div class="timeline-heading">
                       <h3>Tunangan</h3>
                       <span>9 Agustus 2023</span> 
                     </div>
                     <div class="timeline-body">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil architecto quibusdam
-                        accusantium tempora voluptas aut hic similique facere ex at!</p>
+                      <p>Setelah melangkah lebih jauh dalam hubungan, pada 9 Agustus 2023, 
+                        kami dengan gembira memutuskan untuk bertunangan, 
+                        mengikat janji untuk melanjutkan hidup bersama.
+                      </p>
                     </div>
                   </div>
                </li>
-               <li>
-                  <div class="timeline-image" style="background-image:
-                  url(https://picsum.photos/301/301);"></div>
+               <li data-aos="zoom-in-left">
+                  <div class="timeline-image" style="background-image: url(img/gallery/3.jpeg);"></div>
                   <div class="timeline-panel">
                     <div class="timeline-heading">
                       <h3>Lamaran</h3>
                       <span>1 Oktober 2023</span> 
                     </div>
                     <div class="timeline-body">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, fuga nobis
-                        ex doloribus praesentium quae consequuntur incidunt odio.</p>
+                      <p>Langkah serius kami dimulai pada 1 Oktober 2023, dengan tahap lamaran. 
+                        Dalam suasana penuh cinta, kami merencanakan masa depan bersama dengan tekad dan harapan.
+                      </p>
                     </div>
                   </div>
                </li>
-               <li class="timeline-inverted" >
-                  <div class="timeline-image" style="background-image:
-                  url(https://picsum.photos/302/302);"></div>
+               <li class="timeline-inverted" data-aos="zoom-in-right">
+                  <div class="timeline-image" style="background-image: url(img/gallery/4.jpeg);"></div>
                   <div class="timeline-panel">
                     <div class="timeline-heading">
                       <h3>Menikah</h3>
                       <span>22 Desember 2023</span> 
                     </div>
                     <div class="timeline-body">
-                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis nostrum explicabo dolorem totam 
-                        debitis velit consectetur voluptate modi deleniti et? Facere hic veniam deleniti error, velit quibusdam unde dolore iste!</p>
+                      <p>Kami menyatukan takdir pada 22 Oktober 2023, memulai babak baru dalam hidup bersama. 
+                        Dengan doa dan harapan, semoga perjalanan ini penuh berkah dan kebahagiaan.
+                      </p>
                     </div>
                   </div>
                </li>
@@ -327,18 +340,17 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
-          <span>Memori Kisah Kami </span>
-          <h2>Galeri Foto</h2>
-          <p>
-            Lorem, ipsum dolor 
-            sit amet consectetur adipisicing elit. Magnam, quae.
+          <span data-aos="zoom-in-up" >Memori Kisah Kami </span>
+          <h2 data-aos="zoom-in-up">Galeri Foto</h2>
+          <p data-aos="zoom-in-up">
+            Suasana indah kami bersama, terabadikan dalam serangkaian foto yang menampilkan momen-momen berharga bersama.
           </p>
         </div>
       </div>
 
       <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-2
       justify-content-center">
-        <div class="col mt-3">
+        <div class="col mt-3" data-aos="zoom-in-up">
           <a href="img/gallery/1.jpg" data-toggle="lightbox" 
           data-caption="Dinda & Hanafi 1" data-gallery="mygallery">
             <img src="img/gallery/thumbnail/1.jpg" alt="Dinda & Hanafi 1"
@@ -346,7 +358,7 @@
           </a>
         </div>
 
-        <div class="col mt-3">
+        <div class="col mt-3" data-aos="zoom-in-up">
           <a href="img/gallery/2.jpg" data-toggle="lightbox" 
           data-caption="Dinda & Hanafi 2" data-gallery="mygallery">
             <img src="img/gallery/thumbnail/2.jpg" alt="Dinda & Hanafi 2"
@@ -354,7 +366,7 @@
           </a>
         </div>
 
-        <div class="col mt-3">
+        <div class="col mt-3" data-aos="zoom-in-up">
           <a href="img/gallery/3.jpg" data-toggle="lightbox" 
           data-caption="Dinda & Hanafi 3" data-gallery="mygallery">
             <img src="img/gallery/thumbnail/3.jpg" alt="Dinda & Hanafi 3"
@@ -362,7 +374,7 @@
           </a>
         </div>
 
-        <div class="col mt-3">
+        <div class="col mt-3" data-aos="zoom-in-up">
           <a href="img/gallery/4.jpg" data-toggle="lightbox" 
           data-caption="Dinda & Hanafi 4" data-gallery="mygallery">
             <img src="img/gallery/thumbnail/4.jpg" alt="Dinda & Hanafi 4"
@@ -370,7 +382,7 @@
           </a>
         </div>
 
-        <div class="col mt-3">
+        <div class="col mt-3" data-aos="zoom-in-up">
           <a href="img/gallery/5.jpg" data-toggle="lightbox" 
           data-caption="Dinda & Hanafi 5" data-gallery="mygallery">
             <img src="img/gallery/thumbnail/5.jpg" alt="Dinda & Hanafi 5"
@@ -378,7 +390,7 @@
           </a>
         </div>
 
-        <div class="col mt-3">
+        <div class="col mt-3" data-aos="zoom-in-up">
           <a href="img/gallery/6.jpg" data-toggle="lightbox" 
           data-caption="Dinda & Hanafi 6" data-gallery="mygallery">
             <img src="img/gallery/thumbnail/6.jpg" alt="Dinda & Hanafi 6"
@@ -393,8 +405,8 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
-          <h2>Konfirmasi Kehadiaran</h2>
-          <p>
+          <h2  data-aos="zoom-in-up">Konfirmasi Kehadiaran</h2>
+          <p  data-aos="zoom-in-up">
             Isi form di bawah ini untuk melakukan konfirmasi kehadiran.
           </p>
         </div>
@@ -405,22 +417,22 @@
         id="my-form" >
         <div class="col-12">
           <div class="mb-3">
-            <label for="nama" class="form-label">Nama</label>
-            <input type="text" class="form-control" id="nama" name="nama">
+            <label for="nama" class="form-label"  data-aos="zoom-in-up">Nama</label>
+            <input type="text" class="form-control" id="nama" name="nama" data-aos="zoom-in-up">
           </div>
         </div>
         
         <div class="col-12">
           <div class="mb-3">
-            <label for="jumlah" class="form-label">Jumlah</label>
-            <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="15" length="1" value="1">
+            <label for="jumlah" class="form-label"  data-aos="zoom-in-up">Jumlah</label>
+            <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="15" length="1" value="1"  data-aos="zoom-in-up">
           </div>
         </div>
 
         <div class="col-12">
           <div class="mb-3">
-            <label for="status" class="form-label">Konfirmasi</label>
-            <select name="status" id="status" class="form-select">
+            <label for="status" class="form-label"  data-aos="zoom-in-up">Konfirmasi</label>
+            <select name="status" id="status" class="form-select"  data-aos="zoom-in-up">
               <option value="selected">Pilih salah satu</option>
               <option value="Hadir">Hadir</option>
               <option value="Tidak Hadir">Tidak Hadir</option>
@@ -429,7 +441,7 @@
         </div>
 
         <div class="col-12" style="margin-top: 35px;">
-          <button class="btn btn-primary">Kirim</button>
+          <button class="btn btn-primary"  data-aos="zoom-in-up">Kirim</button>
         </div>
       </form>
       
@@ -438,26 +450,13 @@
       <div class="row justify-content-center mt-5">
         <div class="col-md-6">
 
-          <div id="disqus_thread"></div>
-          <script>
-              /**
-              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-              /*
-              var disqus_config = function () {
-              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-              };
-              */
-              (function() { // DON'T EDIT BELOW THIS LINE
-              var d = document, s = d.createElement('script');
-              s.src = 'https://diha-wedding.disqus.com/embed.js';
-              s.setAttribute('data-timestamp', +new Date());
-              (d.head || d.body).appendChild(s);
-              })();
-          </script>
-          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
+          <div id="cusdis_thread"
+            data-host="https://cusdis.com"
+            data-app-id="328fb5f6-be2d-437c-a23c-d83b8f2f56a1"
+            data-page-id="{{ PAGE_ID }}"
+            data-page-url="{{ PAGE_URL }}"
+            data-page-title="{{ PAGE_TITLE }}"
+          ></div> 
         </div>
       </div>
     
@@ -465,13 +464,13 @@
     </div>
    </section>
 
-   <section id="gifts" class="gifts">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-8 col-10 text-center">
-          <span>Ungkapan Tanda Kasih</span>
-          <h2>Kirim Hadiah</h2>
-          <p>
+   <section id="gifts" class="gifts" data-aos="zoom-in-up">
+    <div class="container" data-aos="zoom-in-up">
+      <div class="row justify-content-center" data-aos="zoom-in-up">
+        <div class="col-md-8 col-10 text-center" data-aos="zoom-in-up">
+          <span data-aos="zoom-in-up">Ungkapan Tanda Kasih</span>
+          <h2 data-aos="zoom-in-up">Kirim Hadiah</h2>
+          <p data-aos="zoom-in-up">
             Lorem ipsum dolor sit amet consectetur 
             adipisicing elit. Error libero ipsum vitae, amet consectetur illo.
           </p>
@@ -479,22 +478,48 @@
       </div>
 
       <div class="row justify-content-center text-center">
-       <div class="col-md-6">
+       <div class="col-md-6" data-aos="zoom-in-up">
         <ul class="list-group">
-          <li class="list-group-item">
+          <li class="list-group-item" data-aos="zoom-in-up">
             <div class="fw-bold">BANK SUMUT</div >
-            123456789 - Dinda Rivani
+            10102030083644 - Dinda Rivani
           </li>
         </ul>
 
         <br>
-        <ul class="list-group">
-          <li class="list-group-item">
-            <div class="fw-bold">BCA</div >
-            123456789 - Muhammad Hanafi Ibsan
+
+        <ul class="list-group" data-aos="zoom-in-up">
+          <li class="list-group-item" data-aos="zoom-in-up">
+            <div class="fw-bold">DANA - Dinda Rivani</div >
+              <img src="img/dana-d.jpeg" alt="DANA Dinda" class="img-thumbnail" width="150">
           </li>
         </ul>
 
+        <br>
+
+        <ul class="list-group">
+          <li class="list-group-item" data-aos="zoom-in-up">
+            <div class="fw-bold">BCA</div >
+            8195362331 - Muhammad Hanafi Ibsan
+          </li>
+        </ul>
+        <br>
+
+        <ul class="list-group">
+          <li class="list-group-item" data-aos="zoom-in-up">
+            <div class="fw-bold">BSI</div >
+            7208685036 - Muhammad Hanafi Ibsan
+          </li>
+        </ul>
+        <br>
+
+        <ul class="list-group">
+          <li class="list-group-item" data-aos="zoom-in-up">
+            <div class="fw-bold">DANA Hanafi</div >
+            <img src="img/dana-h.jpeg" alt="DANA Hanafi" class="img-thumbnail" width="150">
+          </li>
+        </ul>
+        <br>
 
        </div> 
       </div>
@@ -715,4 +740,5 @@
 
   </body>
 
+  
 </html>
