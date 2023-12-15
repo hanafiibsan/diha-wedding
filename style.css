@@ -397,13 +397,13 @@ body {
 
 .rsvp button {
   background-color: var(--blue);
-  color: var(--blue)
+  color: var(--blue);
   border: 1px solid var(--blue);
 }
 
 .rsvp button:hover {
-  background-color: white;
-  color: var(--blue);
+  background-color: var(--blue);
+  color: white;
   border: 1px solid white;
 }
 
